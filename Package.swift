@@ -4,8 +4,8 @@ import PackageDescription
 let package = Package(
     name: "NeedleFoundation",
     products: [
-        .library(name: "NeedleFoundation", targets: ["NeedleFoundation"]),
-        .library(name: "NeedleFoundationTest", targets: ["NeedleFoundationTest"])
+        .library(name: "NeedleFoundation", type: .dynamic, targets: ["NeedleFoundation"]),
+        .library(name: "NeedleFoundationTest", type: .dynamic, targets: ["NeedleFoundationTest"])
     ],
     dependencies: [],
     targets: [
